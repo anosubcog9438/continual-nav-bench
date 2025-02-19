@@ -1,4 +1,4 @@
-<img src="./assets/readme/cover.png" alt="Antmaze" />
+<img src="./assets/readme/cover.png" alt="Antmaze"/>
 
 <div id="links">
     <div align="center">
@@ -26,7 +26,7 @@ Continual NavBench is an open-source benchmark for evaluating Offline Continual 
 
 ***Visualization of Human Playing***
 
-<img src="./assets/readme/visu.gif" alt="Visualization" style="width: fit; height: auto; object-fit: contain; margin: auto;">
+<img src="./assets/readme/visu.gif" alt="Visualization">
 
 ## **1. Getting Started**
 
@@ -34,10 +34,22 @@ Continual NavBench is an open-source benchmark for evaluating Offline Continual 
 
 Follow the installation instructions in the [Windows (11)](./installation/WINDOWS.md), [WSL2 (Ubuntu 22.04)](./installation/WSL.md), [Linux (Ubuntu 22.04)](./installation/LINUX.md), or [Linux SuperComputer (Slurm)](./installation/SUPER.md) pages to set up and run the benchmark.
 
-### *1.2. Datasets*
+### *1.2. Pre-Collected Datasets*
 
 Download the datasets of episodes from [this link](https://drive.google.com/drive/folders/1QHzGofKymDIkoN1_4FlPwLlJ0pFwilUo?usp=sharing).  
 Place the folder `datasets/godot/` inside the repository folder `continual-nav-bench/datasets/` directory so that the final path is `continual-nav-bench/datasets/godot/`.
+
+### *1.3. Collect Trajectories*
+
+TODO.
+
+### *1.4. Launch Training*
+
+TODO.
+
+### *1.5. Monitor Results*
+
+TODO.
 
 ## **2. Algorithms**
 
