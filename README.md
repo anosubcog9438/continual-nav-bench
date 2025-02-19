@@ -63,6 +63,8 @@ For single-task learning, we include the following baselines :
 For continual learning, we provide methods from the literature :
 
 - [EWC : Overcoming Catastrophic Forgetting](./articles/continual/EWC.pdf)
+- [HISPO : Hierarchical Subspace of Policies](./articles/continual/HISPO.pdf)
+- [L2 : Maintaining Plasticity in Continual Learning via Regenerative Regularization](./articles/continual/L2.pdf)
 - [PNN : Progressive Neural Networks](./articles/continual/PNN.pdf)
 
 Benchmark results are available in the [benchmarks folder](./benchmarks/CONTINUAL.md).
