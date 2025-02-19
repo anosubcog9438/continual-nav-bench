@@ -57,15 +57,19 @@ TODO.
 
 For single-task learning, we include the following baselines :
 
-- [GCBC : Goal-Condiioned Behavioral Cloning](./articles/singletask/GCBC.pdf)
-- [HGCBC : Hierarchical Goal-Condiioned Behavioral Cloning](./articles/singletask/HGCBC.pdf)
+- [GCBC : Goal-Condiioned Behavioral Cloning](./articles/singletask/GCBC.pdf) ;
+- [HGCBC : Hierarchical Goal-Condiioned Behavioral Cloning](./articles/singletask/HGCBC.pdf).
 
-For continual learning, we provide methods from the literature :
+For continual learning, we provide common methods and others from the literature :
 
-- [EWC : Overcoming Catastrophic Forgetting](./articles/continual/EWC.pdf)
-- [HISPO : Hierarchical Subspace of Policies](./articles/continual/HISPO.pdf)
-- [L2 : Maintaining Plasticity in Continual Learning via Regenerative Regularization](./articles/continual/L2.pdf)
-- [PNN : Progressive Neural Networks](./articles/continual/PNN.pdf)
+- [EWC : Overcoming Catastrophic Forgetting](./articles/continual/EWC.pdf) ;
+- FRZ : Training only on the first task, and freezing model for next tasks ;
+- FT1 & FTN : Finetuning with (N) and without (1) keeping previous models ;
+- [HISPO : Hierarchical Subspace of Policies](./articles/continual/HISPO.pdf) ;
+- [L2 : Maintaining Plasticity in Continual Learning via Regenerative Regularization](./articles/continual/L2.pdf) ;
+- [PNN : Progressive Neural Networks](./articles/continual/PNN.pdf) ;
+- RPL : Replay-based training with all previous datasets accumulated ;
+- SC1 & SCN : Training from scratch with (N) and without (1) keeping previous models.
 
 Benchmark results are available in the [benchmarks folder](./benchmarks/CONTINUAL.md).
 
