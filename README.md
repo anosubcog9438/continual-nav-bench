@@ -26,9 +26,13 @@ Continual NavBench is an open-source benchmark for evaluating Offline Continual 
 
 ***Visualization of Human Playing***
 
-<div id="links" align="center">
-  <img src="./assets/readme/maze.png" alt="Visualization Maze" style="height:240px;">
-  <img src="./assets/readme/visu.gif" alt="Visualization Gif" style="height:160px; width: auto;">
+<div id="links" align="center" style="display: flex; justify-content: center; gap: 1em;">
+  <div style="width:300px; height:300px; overflow:hidden;">
+    <img src="./assets/readme/maze.png" alt="Visualization Maze" style="width:100%; height:100%; object-fit:contain;">
+  </div>
+  <div style="width:300px; height:300px; overflow:hidden;">
+    <img src="./assets/readme/visu.gif" alt="Visualization Gif" style="width:100%; height:100%; object-fit:contain;">
+  </div>
 </div>
 
 ## **1. Getting Started**
