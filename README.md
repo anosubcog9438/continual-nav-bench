@@ -77,8 +77,8 @@ Benchmark results are available in the [benchmarks folder](./benchmarks/CONTINUA
 
 Continual NavBench focuses on video game–inspired navigation:
 
-- **SimpleTown :** 8 simple mazes ( $20\times20\ m$) with randomized start positions and goal locations.
-- **AmazeVille :** 8 more complex mazes ( $60\times60\ m$) featuring fixed start/goal positions and varied obstacle configurations (high non-jumpable vs. low jumpable blocks).
+- **SimpleTown :** 8 simple mazes ( $20\times20\ m$) with randomized start/goal positions.
+- **AmazeVille :** 8 complex mazes ( $60\times60\ m$) with fixed start/goal positions and varied obstacle configurations.
 
 Datasets in both families are human-generated from roughly $10$ hours of gameplay, providing human-like navigation trajectories. Analysis of these datasets are available in `experiments/0_data_analysis/`.
 
