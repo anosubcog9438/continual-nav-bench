@@ -1,9 +1,7 @@
 <img src="./assets/readme/cover.png" alt="Antmaze" />
 
-# C
-
 <div id="links">
-    <div align="center" style="list-style: none;">
+    <div align="center">
         <summary>
             <h2>
                 <a href="https://toto.com" style="color:rgba(250, 174, 34, 0.88);">Paper</a>
