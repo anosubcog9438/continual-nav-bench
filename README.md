@@ -26,7 +26,9 @@ Continual NavBench is an open-source benchmark for evaluating Offline Continual 
 
 ***Visualization of Human Playing***
 
+<div id="links"  align="center">
 <img src="./assets/readme/visu.gif" alt="Visualization">
+</div>
 
 ## **1. Getting Started**
 
