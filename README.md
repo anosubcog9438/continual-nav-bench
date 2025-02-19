@@ -3,7 +3,7 @@
 <img src="./assets/readme/cover.png" alt="Antmaze" />
 
 <div id="links">
-    <ul align="center" style="list-style: none;">
+    <div align="center" style="list-style: none;">
         <summary>
             <h2>
                 <a href="https://toto.com" style="color:rgba(250, 174, 34, 0.88);">Paper</a>
@@ -17,7 +17,7 @@
                 <a href="https://drive.google.com/drive/folders/1QHzGofKymDIkoN1_4FlPwLlJ0pFwilUo?usp=sharing" style="color:rgba(250, 174, 34, 0.88);">Datasets</a>
             </h2>
         </summary>
-  </ul>
+  </div>
 </div>
 
 ## Overview
