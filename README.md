@@ -24,7 +24,7 @@ Continual NavBench is an open-source benchmark for evaluating Offline Continual 
 
 *In dynamic domains such as autonomous robotics and video game simulations, agents must continuously adapt to new tasks while retaining previously acquired skills. This ongoing process, known as Continual Reinforcement Learning, presents significant challenges, including the risk of forgetting previously acquired knowledge and the need for scalable solutions. Building on recent advances in hierarchical policy representations, our benchmark provides a suite of navigation scenarios capturing key challenges: such as catastrophic forgetting, task adaptation, and memory efficiency. We define a set of various tasks and datasets, evaluation protocols, and metrics to assess the performance of algorithms, including state-of-the-art baselines. Our benchmark is designed not only to foster reproducible research and accelerate progress in continual reinforcement learning for gaming, but also to provide a robust evaluation framework to rigorously test navigation methods — helping practitioners identify the most effective approaches to drive advances in production pipelines.*
 
-<img src="./assets/readme/visu.gif" alt="Visualization" style="width: auto; height: auto; object-fit: cover;">
+<img src="./assets/readme/visu.gif" alt="Visualization" style="width: fit; height: auto; object-fit: cover;">
 
 ## **1. Getting Started**
 
