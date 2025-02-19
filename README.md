@@ -2,19 +2,17 @@
 
 <div id="links">
     <div align="center">
-        <summary>
-            <h2>
-                <a href="https://toto.com" style="color:rgba(250, 174, 34, 0.88);">Paper</a>
-                &emsp;
-                &emsp;
-                &emsp;
-                <a href="https://sites.google.com/view/continual-nav-bench/home?authuser=2" style="color:rgba(250, 174, 34, 0.88);">Project Page</a>
-                &emsp;
-                &emsp;
-                &emsp;
-                <a href="https://drive.google.com/drive/folders/1QHzGofKymDIkoN1_4FlPwLlJ0pFwilUo?usp=sharing" style="color:rgba(250, 174, 34, 0.88);">Datasets</a>
-            </h2>
-        </summary>
+        <h2>
+            <a href="https://toto.com">Paper</a>
+            &emsp;
+            &emsp;
+            &emsp;
+            <a href="https://sites.google.com/view/continual-nav-bench/home?authuser=2">Project Page</a>
+            &emsp;
+            &emsp;
+            &emsp;
+            <a href="https://drive.google.com/drive/folders/1QHzGofKymDIkoN1_4FlPwLlJ0pFwilUo?usp=sharing">Datasets</a>
+        </h2>
   </div>
 </div>
 
