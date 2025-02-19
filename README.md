@@ -28,7 +28,7 @@ Continual NavBench is an open-source benchmark for evaluating Offline Continual 
 
 <div id="links" align="center">
   <img src="./assets/readme/maze.png" alt="Visualization Maze" style="height:200px;">
-  <img src="./assets/readme/visu.gif" alt="Visualization Gif" style="height:200px;">
+  <img src="./assets/readme/visu.gif" alt="Visualization Gif" style="height:200px; width: auto;">
 </div>
 
 ## **1. Getting Started**
