@@ -1,5 +1,3 @@
-#
-
 <img src="./assets/readme/cover.png" alt="Antmaze" />
 
 <div id="links">
