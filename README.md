@@ -20,15 +20,11 @@
 
 Continual NavBench is an open-source benchmark for evaluating Offline Continual Reinforcement Learning (CRL) in video game–inspired navigation tasks. It provides Godot-based 3D maze environments, human-generated datasets, task streams, and standardized evaluation protocols to foster reproducible research and guide production-grade AI integration.
 
-<div style="display: flex; flex-wrap: wrap; align-items: flex-start;">
-  <div style="flex: 2; font-style: italic; padding-right: 1em;">
-    <strong>Abstract</strong><br>
-    In dynamic domains such as autonomous robotics and video game simulations, agents must continuously adapt to new tasks while retaining previously acquired skills. This ongoing process, known as Continual Reinforcement Learning, presents significant challenges, including the risk of forgetting previously acquired knowledge and the need for scalable solutions. Building on recent advances in hierarchical policy representations, our benchmark provides a suite of navigation scenarios capturing key challenges: catastrophic forgetting, task adaptation, and memory efficiency. We define various tasks, datasets, evaluation protocols, and metrics to assess algorithm performance, including state-of-the-art baselines. Our benchmark is designed to foster reproducible research and guide production-grade testing of navigation methods.
-  </div>
-  <div style="flex: 1;">
-    <img src="./assets/readme/visu.gif" alt="Visualization" style="width: 100%; height: auto; object-fit: cover;">
-  </div>
-</div>
+***Abstract**
+
+*In dynamic domains such as autonomous robotics and video game simulations, agents must continuously adapt to new tasks while retaining previously acquired skills. This ongoing process, known as Continual Reinforcement Learning, presents significant challenges, including the risk of forgetting previously acquired knowledge and the need for scalable solutions. Building on recent advances in hierarchical policy representations, our benchmark provides a suite of navigation scenarios capturing key challenges: such as catastrophic forgetting, task adaptation, and memory efficiency. We define a set of various tasks and datasets, evaluation protocols, and metrics to assess the performance of algorithms, including state-of-the-art baselines. Our benchmark is designed not only to foster reproducible research and accelerate progress in continual reinforcement learning for gaming, but also to provide a robust evaluation framework to rigorously test navigation methods — helping practitioners identify the most effective approaches to drive advances in production pipelines.*
+
+<img src="./assets/readme/visu.gif" alt="Visualization" style="width: 100%; height: auto; object-fit: cover;">
 
 ## **1. Getting Started**
 
