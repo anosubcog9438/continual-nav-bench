@@ -83,6 +83,14 @@ Continual NavBench focuses on video game–inspired navigation:
 
 Datasets in both families are human-generated from roughly $10$ hours of gameplay, providing human-like navigation trajectories. Analysis of these datasets are available in `experiments/0_data_analysis/`.
 
+***SimpleTown Trajectories***
+
+<img src="./assets/readme/simpletown-trajectories.png" alt="SimpleTown Trajectories"/>
+
+***AmazeVille Trajectories***
+
+<img src="./assets/readme/amazeville-trajectories.png" alt="AmazeVille Trajectories"/>
+
 ## **4. Task Streams**
 
 Our benchmark defines task streams with different maze configurations. We distinguish two types of streams :
