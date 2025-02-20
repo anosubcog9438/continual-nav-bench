@@ -96,15 +96,15 @@ Datasets in both families are human-generated from roughly $10$ hours of gamepla
 Our benchmark defines task streams with different maze configurations. We distinguish two types of streams :
 
 - **Random Streams :** In AmazeVille we have :
-    - *Stream 1 :* A-LOOX → A-HXOX → A-LXOX → A-HXOX ;
-    - *Stream 2 :* A-HXOO → A-HOOX → A-LOOX → A-LXOO.
+  - *Stream 1 :* A-LOOX → A-HXOX → A-LXOX → A-HXOX ;
+  - *Stream 2 :* A-HXOO → A-HOOX → A-LOOX → A-LXOO.
 
 - **Topological Streams:** Designed with systematic common
 changes in maze structure. We have in both environments :
-    - *Stream 1 :* A-HOOX → A-HXOX → A-HXOX → A-HOOX ;
-    - *Stream 2 :* A-LOOO → A-LOOO → A-LXOX → A-LXOO ;
-    - *Stream 3 :* S-BASE → S-OXO → S-BASE → S-OOX ;
-    - *Stream 4 :* S-BASE → S-OXX → S-XOO → S-OXX.
+  - *Stream 1 :* A-HOOX → A-HXOX → A-HXOX → A-HOOX ;
+  - *Stream 2 :* A-LOOO → A-LOOO → A-LXOX → A-LXOO ;
+  - *Stream 3 :* S-BASE → S-OXO → S-BASE → S-OOX ;
+  - *Stream 4 :* S-BASE → S-OXX → S-XOO → S-OXX.
 
 Notably, some tasks reoccur within a stream, offering an opportunity to evaluate whether an algorithm can recognize and reuse previously learned strategies without increasing model size or compromising performance. We encourage future users to tailor task streams to address specific research or production goals. Additionally, these environments are well-suited for developing and benchmarking GCRL algorithms
 
