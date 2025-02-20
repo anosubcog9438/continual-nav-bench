@@ -10,9 +10,12 @@ events.out.tfevents.*
 
 *.cache
 *.egg-info
+*.exe
 *.lock
+*.pck
 *.pickle
 *.pt
 *.pth
 *.pyc
 *.tmp
+*.x86_64

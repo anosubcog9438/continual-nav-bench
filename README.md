@@ -37,6 +37,8 @@ Continual NavBench is an open-source benchmark for evaluating Offline Continual 
 
 Follow the installation instructions in the [Windows (11)](./installation/WINDOWS.md), [WSL2 (Ubuntu 22.04)](./installation/WSL.md), [Linux (Ubuntu 22.04)](./installation/LINUX.md), or [Linux SuperComputer (Slurm)](./installation/SUPER.md) pages to set up and run the benchmark.
 
+Once it is done, download the [executables](https://drive.google.com/drive/folders/1ixd0XJI--7MsZ-gOxF00POYzYYLmJ-6V?usp=sharing) and place them in the folder `./python/offbench/envs/godot_goal/executables/`.
+
 ### *1.2. Pre-Collected Datasets*
 
 Download the datasets of episodes from [this link](https://drive.google.com/drive/folders/1QHzGofKymDIkoN1_4FlPwLlJ0pFwilUo?usp=sharing).  
