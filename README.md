@@ -46,15 +46,11 @@ Place the folder `datasets/godot/` inside the repository folder `continual-nav-b
 
 ### *1.3. Collect Trajectories*
 
-TODO.
+Please refer this [tutorial](./datasets/README.md) to play and generate data by yourself.
 
-### *1.4. Launch Training*
+### *1.4. Launch Training and Monitor Results*
 
-TODO.
-
-### *1.5. Monitor Results*
-
-TODO.
+Please refer to this [tutorial](./experiments/README.md) to launch trainings and monitor the results*.
 
 ## **2. Algorithms**
 
