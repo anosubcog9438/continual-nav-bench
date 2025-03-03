@@ -13,10 +13,10 @@ hydra:
     params:
       ++seed: 100, 200, 300
       ++stream_name: amazeville_topological_1, amazeville_topological_2
-      ++heps: 0.1
-      ++leps: 0.1
+      ++heps: 0.05, 0.1
+      ++leps: 0.05, 0.1
       ++mode: l2
-      ++lambda: 0.1
+      ++lambda: 0.05, 0.1
 
 defaults:
   - _self_
@@ -119,7 +119,7 @@ agent_cfg:
 
   classname: offbench.core.agent:Agent
 
-  agent_id: hgcbc_hispofix_mlp_heps${heps}_leps${leps}_lb${lambda}_${mode}
+  agent_id: hgcbc_hispo_mlp_heps${heps}_leps${leps}_lb${lambda}_${mode}
 
   policy_cfg:
 
