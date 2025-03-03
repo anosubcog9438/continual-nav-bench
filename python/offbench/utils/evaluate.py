@@ -3,7 +3,6 @@ import torch
 from .generate_episodes import generate_episodes
 from offbench.core.agent import Agent
 from offbench.core.data import Episode, EpisodesDB
-from offbench.envs.gym_loco import GymLocoEnv
 from omegaconf import DictConfig
 from typing import Any, Dict, List, Union
 
@@ -20,62 +19,26 @@ def evaluate_episode(
 
     results = {}
 
-    task_keys = task.split("-")
+    _length = 0
+    _undiscounted_return = 0
+    _discounted_return = 0
+    _success = 0
 
-    if task_keys[0] in ["ant", "halfcheetah", "hopper", "walker2d"]:
+    for frame in episode:
+
+        _length += 1
+        _undiscounted_return += frame["reward"][0].item()
+        _discounted_return += frame["reward"][0].item() * (gamma ** (_length - 1))
+        _success += float(frame["done"][0].item())
+
+        if frame["done"][0].item() or frame["truncated"][0].item(): break
+        elif not (max_episode_steps is None) and _length >= max_episode_steps: break
     
-        _length = 0
-        _return = 0
-
-        _env = task_keys[0]
-        _level = task_keys[1]
-        _task = task_keys[2] if len(task_keys) > 2 else "normal"
-
-        env = GymLocoEnv(
-            env=_env,
-            level=_level,
-            task=_task,
-            autoreset=False,
-            max_episode_steps=max_episode_steps,
-            device="cpu",
-        )
-
-        for frame in episode:
-
-            _length += 1
-            _return += frame["reward"][0].item() * (gamma ** (_length - 1))
-
-            if frame["done"][0].item() or frame["truncated"][0].item(): break
-            elif not (max_episode_steps is None) and _length >= max_episode_steps: break
-        
-        results["length"] = _length
-        results["score_normalized"] = env.normalize_score(_return)
-        results["score"] = _return
-
-    elif task_keys[0] in ["antmaze", "pointmaze", "amazeville", "simpletown"]:
+    results["length"] = _length
+    results["undiscounted_return"] = _undiscounted_return
+    results["discounted_return"] = _discounted_return
+    results["success"] = _success
     
-        _length = 0
-        _undiscounted_return = 0
-        _discounted_return = 0
-        _success = 0
-
-        for frame in episode:
-
-            _length += 1
-            _undiscounted_return += frame["reward"][0].item()
-            _discounted_return += frame["reward"][0].item() * (gamma ** (_length - 1))
-            _success += float(frame["done"][0].item())
-
-            if frame["done"][0].item() or frame["truncated"][0].item(): break
-            elif not (max_episode_steps is None) and _length >= max_episode_steps: break
-        
-        results["length"] = _length
-        results["undiscounted_return"] = _undiscounted_return
-        results["discounted_return"] = _discounted_return
-        results["success"] = _success
-    
-    else: raise ValueError(f"Unknown env: {task_keys[0]}")
-
     return results
 
 

@@ -25,7 +25,7 @@ def main(cfg:DictConfig) -> None:
         "1_singletask",
         "godot_goal",
         str(cfg.task_cfg.task_name),
-        str(cfg.agent_cfg.agent_id_bis),
+        str(cfg.agent_cfg.agent_id),
         f"seed_{cfg.seed}/"
     )
 

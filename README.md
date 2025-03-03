@@ -3,7 +3,7 @@
 <div id="links">
     <div align="center">
         <h2>
-            <a href="https://toto.com">Paper</a>
+            <a href="./articles/paper.pdf">Paper</a>
             &emsp;
             &emsp;
             &emsp;
@@ -35,7 +35,7 @@ Continual NavBench is an open-source benchmark for evaluating Offline Continual 
 
 ### *1.1. Installation*
 
-Follow the installation instructions in the [Windows (11)](./installation/WINDOWS.md), [WSL2 (Ubuntu 22.04)](./installation/WSL.md), [Linux (Ubuntu 22.04)](./installation/LINUX.md), or [Linux SuperComputer (Slurm)](./installation/SUPER.md) pages to set up and run the benchmark.
+Follow the installation instructions in the [Windows (11)](./installation/WINDOWS.md), [WSL2 (Ubuntu 22.04)](./installation/WSL.md), or [Linux (Ubuntu 22.04)](./installation/LINUX.md).
 
 Once it is done, download the [executables](https://drive.google.com/drive/folders/1ixd0XJI--7MsZ-gOxF00POYzYYLmJ-6V?usp=sharing) and place them in the folder `./python/offbench/envs/godot_goal/executables/`.
 
@@ -48,7 +48,7 @@ Place the folder `datasets/godot/` inside the repository folder `continual-nav-b
 
 Please refer this [tutorial](./datasets/README.md) to play and generate data by yourself.
 
-### *1.4. Launch Training and Monitor Results*
+### *1.4. Launch a Training and Monitor Results*
 
 Please refer to this [tutorial](./experiments/README.md) to launch trainings and monitor the results*.
 
@@ -81,13 +81,13 @@ Continual NavBench focuses on video game–inspired navigation:
 
 Datasets in both families are human-generated from roughly $10$ hours of gameplay, providing human-like navigation trajectories. Analysis of these datasets are available in `experiments/0_data_analysis/`.
 
-***SimpleTown Trajectories***
+***SimpleTown \& AmazeVille Trajectories***
 
-<img src="./assets/readme/simpletown-trajectories.png" alt="SimpleTown Trajectories"/>
+<img src="./assets/readme/mazes.png" alt="Mazes Trajectories"/>
 
-***AmazeVille Trajectories***
+The naming convention of the tasks use a prefix for the maze family (S for *SimpleTown*, and A for *AmazeVille*), the the subsequent characters encode key layout features where “O” and “X” are respectively open and closed doors, and “H” and “L” denote high and low blocks.
 
-<img src="./assets/readme/amazeville-trajectories.png" alt="AmazeVille Trajectories"/>
+When it comes to naming the datasets, given the order provided in the above figure, the *SimpleTown* datasets are named `simpletown-maze_i` with `i` between `0` and `7`. For *AmazeVille*, th enaming convention of the datasets are `amazeville-maze_i-mode` with `i` between `1` and `4`, and `mode` in `{ low , high }`.
 
 ## **4. Task Streams**
 

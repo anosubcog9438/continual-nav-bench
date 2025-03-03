@@ -102,8 +102,8 @@ Follow these commands :
 ```powershell
 cd C:/Users/<YOU>/
 cd ./workspace_continual/continual-nav-bench/python/
-pip instal -r requirements.txt
-pip instal -e .
+pip install -r requirements.txt
+pip install -e .
 ```
 
 ### **3.B. Pytorch**
@@ -117,15 +117,6 @@ python -m pip install torch torchvision --index-url https://download.pytorch.org
 ## **4. Datasets**
 
 Follow the [README](../README.md) instructions.
-
-## **5. Godot**
-
-To allow evaluation on the Godot based environments (it may be possible that you have to do it every time you pull from the main branch..) :
-
-```powershell
-cd C:/Users/<YOU>//workspace_continual/continual-nav-bench/python/envs/godot_goal/executables/
-chmod +x *
-```
 
 ___
 ___

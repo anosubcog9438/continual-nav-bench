@@ -1,5 +1,13 @@
 #? the descriptions of most of the following parameters are given in the files they're used
 
+####################
+# ENVIRONMENT  CFG #
+####################
+
+env: simpletown
+maze: maze_0
+task: null
+
 ############
 # EXE USED #
 ############

@@ -107,8 +107,8 @@ Follow these commands :
 ```bash
 cd ~
 cd ./workspace_continual/continual-nav-bench/python/
-pip instal -r requirements.txt
-pip instal -e .
+pip install -r requirements.txt
+pip install -e .
 ```
 
 ### **3.B. Pytorch**
