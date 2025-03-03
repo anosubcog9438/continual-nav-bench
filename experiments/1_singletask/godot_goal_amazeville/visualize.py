@@ -35,8 +35,6 @@ def main(cfg:DictConfig) -> None:
     # create agent database (if it does not exist)
     ###############################################
 
-    print(experiment_folder_path)
-
     agents_db = PytorchAgentsDB(directory=os.path.join(experiment_folder_path,"agents_db"))
 
     agent = agents_db.get_last_stage(agent_id=str(cfg.agent_cfg.agent_id))

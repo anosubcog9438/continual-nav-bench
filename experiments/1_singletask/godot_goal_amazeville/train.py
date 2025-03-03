@@ -6,7 +6,7 @@ from offbench.data.agents_db.pytorch import PytorchAgentsDB
 from offbench.data.loggers import TensorBoardLogger
 from offbench.utils.imports import get_class
 from offbench.utils.paths import WORKSPACE_PATH
-from omegaconf import DictConfig, OmegaConf
+from omegaconf import DictConfig
 
 
 

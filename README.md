@@ -87,7 +87,7 @@ Datasets in both families are human-generated from roughly $10$ hours of gamepla
 
 The naming convention of the tasks use a prefix for the maze family (S for *SimpleTown*, and A for *AmazeVille*), the the subsequent characters encode key layout features where “O” and “X” are respectively open and closed doors, and “H” and “L” denote high and low blocks.
 
-When it comes to naming the datasets, given the order provided in the above figure, the *SimpleTown* datasets are named `simpletown-maze_i` with `i` between `0` and `7`. For *AmazeVille*, th enaming convention of the datasets are `amazeville-maze_i-mode` with `i` between `1` and `4`, and `mode` in `{ low , high }`.
+When it comes to naming the datasets, given the order provided in the above figure, the *SimpleTown* datasets are named `simpletown-maze_i` with `i` between `0` and `7`. For *AmazeVille*, the naming convention of the datasets are `amazeville-maze_i-mode` with `i` between `1` and `4`, and `mode` in `{ low , high }`.
 
 ## **4. Task Streams**
 

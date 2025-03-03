@@ -26,6 +26,8 @@ tensorboard --logdir .\experiments\
 
 ## **2. Training**
 
+To generate trajectories by yourself see this [tutorial](../datasets/README.md).
+
 The configuration folder, containing the yaml configuration files, are contained in the sub-folders of `C:/Users/<YOU>/workspace_continual/continual-nav-bench/experiments/`.
 
 A leaf configuration folder contains three files :

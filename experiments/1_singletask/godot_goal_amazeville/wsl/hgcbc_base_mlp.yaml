@@ -29,7 +29,6 @@ defaults:
 maze: maze_1
 level: high
 waysteps: 10
-batch_size: 64
 
 seed: 0
 verbose: true
@@ -96,7 +95,7 @@ algo_cfg:
     her_strategy: exponential
     her_strategy_params:
       temperature: 150.0
-    batch_size: ${batch_size}                                 #? batch size
+    batch_size: 64                                            #? batch size
     context_size: 0                                           #? how many previous frames to use (0 == just use the current frame)
     percentage_episodes: 1.0                                  #? how much of the dataset to use (1.0 == 100%)
     padding_size_begin: ${algo_cfg.sampler_cfg.context_size}  #? padding size at the beginning of the episodes

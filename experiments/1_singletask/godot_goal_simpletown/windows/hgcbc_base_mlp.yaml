@@ -71,7 +71,7 @@ algo_cfg:
   eval_gamma: 0.99
   eval_reset_args:
     batch_size: 20
-    exe_type: ubuntu_2204
+    exe_type: windows
   eval_mode_args:
     stochastic: false
   
@@ -82,7 +82,7 @@ algo_cfg:
   visu_max_episode_steps: 300
   visu_reset_args:
     batch_size: 20
-    exe_type: ubuntu_2204
+    exe_type: windows
   visu_mode_args:
     stochastic: false
   
