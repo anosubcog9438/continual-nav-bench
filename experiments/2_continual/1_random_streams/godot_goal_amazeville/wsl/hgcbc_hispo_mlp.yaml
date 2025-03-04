@@ -119,7 +119,7 @@ agent_cfg:
 
   classname: offbench.core.agent:Agent
 
-  agent_id: hgcbc_hispo_mlp_heps${heps}_leps${leps}_lb${lambda}_${mode}
+  agent_id: hgcbc_hispofix_mlp_heps${heps}_leps${leps}_lb${lambda}_${mode}
 
   policy_cfg:
 
