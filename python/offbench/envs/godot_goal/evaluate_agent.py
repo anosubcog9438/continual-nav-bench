@@ -170,12 +170,11 @@ def generate_godot_episodes(
 
     assert "exe_type" in agent_reset_args, "exe_type not found in agent_reset_args."
     exe_type = str(agent_reset_args["exe_type"])
-    assert exe_type in ["windows","ubuntu_2004","ubuntu_2204","jeanzay"], "Unknown exe_type. Available ones are : windows, ubuntu_2004, ubuntu_2204, jeanzay"
+    assert exe_type in ["windows","ubuntu_2004","ubuntu_2204"], "Unknown exe_type. Available ones are : windows, ubuntu_2004, ubuntu_2204"
 
     if exe_type == "windows": exe_path = CURRENT_FOLDER_PATH + "/executables/windows.exe"
     if exe_type == "ubuntu_2004": exe_path = CURRENT_FOLDER_PATH + "/executables/ubuntu2004.x86_64"
     if exe_type == "ubuntu_2204": exe_path = CURRENT_FOLDER_PATH + "/executables/ubuntu2204.x86_64"
-    if exe_type == "jeanzay": exe_path = CURRENT_FOLDER_PATH + "/executables/jeanzay.x86_64"
     assert os.path.exists(exe_path), "Executable does not exist..."
 
     OmegaConf.update(cfg,"run.exe",exe_path)

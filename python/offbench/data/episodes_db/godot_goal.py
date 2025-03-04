@@ -26,10 +26,11 @@ class GodotGoalEpisodesDB(EpisodesDB):
         env (str): The environment name.
     """
 
-    def __init__(self, env: str) -> None:
+    def __init__(self, env: str, directory: str = None) -> None:
 
         self._env = env
-        self._directory = os.path.join(DATASETS_PATH, "godot", *self._env.split("-"))
+        if not directory is None: self._directory = directory
+        else: self._directory = os.path.join(DATASETS_PATH, "godot", *self._env.split("-"))
 
         # check if directory exists
         if not os.path.exists(os.path.join(CURRENT_FOLDER_PATH,"locks")):

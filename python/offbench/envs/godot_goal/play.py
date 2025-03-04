@@ -95,7 +95,7 @@ def release_port(port: int) -> None:
 
 
 
-def human_play(
+def play(
     task:str,
     episodes_db:GodotGoalEpisodesDB,
     seed:int=None,
@@ -142,7 +142,7 @@ def human_play(
     ##############################
 
     current_folder_path = os.path.dirname(os.path.realpath(__file__))
-    cfg:DictConfig = OmegaConf.load(current_folder_path+"/human_play.yaml")
+    cfg:DictConfig = OmegaConf.load(current_folder_path+"/play.yaml")
 
     # Updating port value #
     #######################
@@ -168,12 +168,11 @@ def human_play(
     # update exe according to os
     ############################
 
-    assert exe_type in ["windows","ubuntu_2004","ubuntu_2204","jeanzay"], "Unknown exe_type. Available ones are : windows, ubuntu_2004, ubuntu_2204, jeanzay"
+    assert exe_type in ["windows","ubuntu_2004","ubuntu_2204"], "Unknown exe_type. Available ones are : windows, ubuntu_2004, ubuntu_2204"
 
     if exe_type == "windows": exe_path = current_folder_path + "/executables/windows.exe"
     if exe_type == "ubuntu_2004": exe_path = current_folder_path + "/executables/ubuntu2004.x86_64"
     if exe_type == "ubuntu_2204": exe_path = current_folder_path + "/executables/ubuntu2204.x86_64"
-    if exe_type == "jeanzay": exe_path = current_folder_path + "/executables/jeanzay.x86_64"
     assert os.path.exists(exe_path), "Executable does not exist..."
 
     OmegaConf.update(cfg,"run.exe",exe_path)

@@ -5,6 +5,9 @@ ___
 
 We suppose you have followed the instruction provided in the installation pages ([Windows (11)](./installation/WINDOWS.md), [WSL2 (Ubuntu 22.04)](./installation/WSL.md), or [Linux (Ubuntu 22.04)](./installation/LINUX.md)).
 
+When visualizing or playing, you may have to change the executable type depending on your configuration.
+We only provide executables for *Windows*, *Ubuntu 20.04*, and *Ubuntu 22.04*.
+
 In the following we will consider the Windows framework.
 
 ## **1. Initialization**
