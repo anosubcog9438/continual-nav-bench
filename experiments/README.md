@@ -51,13 +51,13 @@ All yaml files have straightforwardly named parameters and/or explanation of the
 Given the name of the yaml file and the os to consider, use the following command to launch a training ( e.g. for the GCBC algorithm and some custom parameters ) :
 
 ```powershell
-python .\experiments\1_singletask\godot_goal_amazeville\train.py  --config-path=windows --config-name=gcbc_base_mlp algo_cfg.log_infos=true seed=0
+python .\experiments\1_singletask\godot_goal_amazeville\train.py  --config-path=windows --config-name=gcbc_base_mlp algo_cfg.log_infos=true seed=100
 ```
 
 Then to visualize the latest saved agent :
 
 ```powershell
-python .\experiments\1_singletask\godot_goal_amazeville\visualize.py  --config-path=windows --config-name=gcbc_base_mlp seed=0
+python .\experiments\1_singletask\godot_goal_amazeville\visualize.py  --config-path=windows --config-name=gcbc_base_mlp seed=100
 ```
 
 ### **1.B. Continual Training \& Visualization**
@@ -65,13 +65,13 @@ python .\experiments\1_singletask\godot_goal_amazeville\visualize.py  --config-p
 Similarly, you can launch training on a stream of tasks defined in a given yaml configuration with the command (the default streams are defined here ``C:/Users/<YOU>/workspace_continual/continual-nav-bench/python/offbench/data/streams/`) :
 
 ```powershell
-python .\experiments\2_continual\1_random_streams\godot_goal_amazeville\train.py  --config-path=windows --config-name=hgcbc_base_mlp algo_cfg.log_infos=true seed=0
+python .\experiments\2_continual\1_random_streams\godot_goal_amazeville\train.py  --config-path=windows --config-name=hgcbc_scratch_1_mlp algo_cfg.log_infos=true seed=100 stream_name=amazeville_random_1
 ```
 
 Then to visualize the latest saved agent at a given task idx ( starting at 0 ) :
 
 ```powershell
-python .\experiments\2_continual\1_random_streams\godot_goal_amazeville\visualize.py  --config-path=windows --config-name=hgcbc_base_mlp seed=0 algo_cfg.visu_task_idx=2
+python .\experiments\2_continual\1_random_streams\godot_goal_amazeville\visualize.py  --config-path=windows --config-name=hgcbc_scratch_1_mlp seed=100  stream_name=amazeville_random_1 algo_cfg.visu_task_idx=2
 ```
 
 ## **2. Monitor Training**

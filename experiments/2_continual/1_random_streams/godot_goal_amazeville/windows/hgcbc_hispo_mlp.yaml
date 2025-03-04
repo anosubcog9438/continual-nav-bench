@@ -35,7 +35,7 @@ waysteps: 10
 heps: 0.1
 leps: 0.1
 mode: l2
-lambda: 1.0
+lambda: 0.1
 
 seed: 0
 verbose: true
