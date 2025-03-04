@@ -10,6 +10,8 @@ We only provide executables for *Windows*, *Ubuntu 20.04*, and *Ubuntu 22.04*.
 
 In the following we will consider the Windows framework.
 
+The datasets of episodes are available [here](https://drive.google.com/drive/folders/1QHzGofKymDIkoN1_4FlPwLlJ0pFwilUo?usp=sharing).  
+
 ## **1. Initialization**
 
 The yaml file `./play.yaml` alongside this `README.md` file contains all the only few parameters to tune in order to play and to generate trajectories.
