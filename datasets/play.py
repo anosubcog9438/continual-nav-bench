@@ -1,6 +1,7 @@
 import hydra
 import os
 
+from offbench.data.episodes_db.dummy import DummyEpisodesDB
 from offbench.data.episodes_db.godot_goal import GodotGoalEpisodesDB
 from offbench.envs.godot_goal.play import play
 from offbench.utils.paths import DATASETS_PATH
@@ -19,8 +20,9 @@ def main(cfg:DictConfig) -> None:
     if not cfg.dataset_path is None: directory = os.path.join(DATASETS_PATH,cfg.dataset_path)
     else: directory = None
     
-    episodes_db = GodotGoalEpisodesDB(env=task,directory=directory)    
-
+    if cfg.save_episodes: episodes_db = GodotGoalEpisodesDB(env=task,directory=directory)    
+    else: episodes_db = DummyEpisodesDB()
+    
     play(
         task=task,
         episodes_db=episodes_db,

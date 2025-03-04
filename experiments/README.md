@@ -46,6 +46,8 @@ And some folder depending on the os, with one yaml file per algorithm :
 
 All yaml files have straightforwardly named parameters and/or explanation of their utility in the python script they are called.
 
+Moreover, all trained models are available [here](https://drive.google.com/drive/folders/1QHzGofKymDIkoN1_4FlPwLlJ0pFwilUo?usp=sharing).
+
 ### **1.A. Single Task Training \& Visualization**
 
 Given the name of the yaml file and the os to consider, use the following command to launch a training ( e.g. for the GCBC algorithm and some custom parameters ) :

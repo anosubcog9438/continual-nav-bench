@@ -52,6 +52,8 @@ Please refer this [tutorial](./datasets/README.md) to play and generate data by 
 
 Please refer to this [tutorial](./experiments/README.md) to launch trainings and monitor the results*.
 
+Trained models are available [here](https://drive.google.com/drive/folders/1QHzGofKymDIkoN1_4FlPwLlJ0pFwilUo?usp=sharing).
+
 ## **2. Algorithms**
 
 For single-task learning, we include the following baselines :
