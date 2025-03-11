@@ -42,5 +42,5 @@ task_cfg:
 
 n_episodes: 10            # number of episodes to play
 max_episode_steps: 300    # maximum number of steps in an episode
-max_episodes_db_len: null # maximum number of episodes in the dataset
+max_episodes_db_len: 1000 # maximum number of episodes in the dataset
 exe_type: windows         # type of the executable (windows, ubuntu_2004, ubuntu_2204)
